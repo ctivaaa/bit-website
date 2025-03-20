@@ -7,3 +7,7 @@
   ---
   *Juan Cuitiva*
   ---
+  **Github profile:** 
+  ---
+  [Link to github](https://bitinstitute.co/)
+  ---
