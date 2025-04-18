@@ -1,0 +1,133 @@
+:root{
+    --main-color: #9A9A9A;
+    --head-color: #808080;
+    --aside-color:#BCBCBC;
+    --color-text: #5E5E5E;
+    --tittle-color: #343434;
+    --white-color: white;
+  }
+  *{
+    font-family: 'Segoe UI';
+    color: var(--aside-color);
+
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+
+
+  body{ 
+    display: flex; /*Para activar el flexbox */
+        flex-wrap: wrap; /* para pedirle que respete los anchos dados a cada uno a diferencia de nowrap que hace lo contrario*/
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-text);
+  }
+  /* Layout */
+  
+   .contact-main {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    border-radius: 30px;
+   }
+  
+   .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    gap: 20px;
+  }
+
+ 
+  .telefono, .date, .journey {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* Layout */
+  
+  
+  
+  /* submit  */
+  .submit {
+width: 30%;   
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+  
+     #submit-bottom {
+      height: 50px;
+      width: 200px;
+      border-radius: 80px;
+      color: var(--tittle-color);
+      background-color: var(--main-color);
+      transition: 0.3s;
+      display: flex;
+    
+     }
+
+     #submit-bottom:hover{
+     background-color: var(--tittle-color);
+     color: var(--white-color);
+     }
+     
+    /* fin submit */
+    /* Boton de volver */
+   .return{
+margin-bottom: auto;
+margin-top: 4%;
+   }
+    #buttonReturn {
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+#buttonReturn:hover {
+color: var(--white-color);
+}
+/* FIn de boton volver */
+
+/* estilos de cajas */
+
+#telefono {
+  background-color: var(--main-color);
+}
+
+#date {
+  background-color: var(--main-color);
+}
+
+/* fin estilos de cajas */
+
+/* responsive */
+
+@media screen and (max-width: 992px) {
+  .contact-main {
+    background-color: var(--color-text);
+  }
+}
+@media screen and (min-width:992px){
+
+
+
+
+  .contact-main {
+    width: 75%;
+    height: 85%;
+    background-color: var(--tittle-color);
+    display: flex;
+    border-radius: 30px;
+   }
+  
+
+
+  
+}

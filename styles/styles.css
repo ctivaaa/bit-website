@@ -1,0 +1,168 @@
+:root{
+  --main-color: #9A9A9A;
+  --head-color: #808080;
+  --aside-color:#BCBCBC;
+  --color-text: #5E5E5E;
+  --tittle-color: #343434;
+  --white-color: white;
+}
+*{
+  font-family: 'Segoe UI';
+color: var(--color-text);
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+/*FLEXBOX*/
+
+/* se debe primero activar la propiedad con la etiqueta de display flex, luego de esto le digo que respete los anchos que le di a cada propiedad con el flexwrap, a cada seccion de mi pagina por ende debo darle o decirle que ocupe un ancho determinado respecto a donde se encuentra contenido (el body) */
+
+/*CENTRAR ELEMENTOS CON FLEXBOX*/
+
+/* Para centrar elementos con flexbox se deben centrar en ambos ejes (X, Y) tomando de referencia el plano cartesiano, usando para el eje x la etiqueta justify content, y para el eje Y la etiqueta Align items */
+
+body{ 
+  margin: 0;
+  display: flex; /*Para activar el flexbox */
+  flex-wrap: wrap; /* para pedirle que respete los anchos dados a cada uno a diferencia de nowrap que hace lo contrario*/
+}
+
+header, nav, aside, main, footer, section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+nav {
+  background-color: var(--head-color);
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+}
+nav a{
+transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: white;
+}
+
+ header {
+  background-color: var(--head-color);
+width: 100%;
+ }
+aside { 
+background-color: var(--aside-color);
+width: 25%;
+}
+main{
+  background-color: var(--main-color);
+width: 75%;
+}
+footer{
+background-color: var(--head-color);
+width: 100%;
+color: var(--tittle-color);
+}
+
+
+aside img {
+  width: 80%;
+  height: auto ;
+  padding: 0px;
+}
+section {
+  width: 100%;
+}
+h1{
+  color: var(--tittle-color);
+}
+h2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  color: var(--tittle-color);
+}
+
+/* FIN FLEXBOX */
+
+/*  Inicio contact */
+
+.bodycontact{
+  width: 80%;
+  height: 80%;
+  display: flex;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+ gap: 20px;
+ background-color: var(--tittle-color);
+ font-size: 22px;
+ border-radius: 50px;
+   }
+
+
+   .journey, .submit, .date, .telefono{
+    display: flex;
+   }
+
+   #contact  {
+    background-color:var(--color-text);
+   }
+   #contact label, h2, h1 {
+    color: var(--aside-color);
+
+  
+   
+  }
+
+
+  .journey {
+    margin-right: auto;
+  }
+  
+
+.lateralTrabajos h2{
+  color: var(--color-text);
+
+}
+
+.lateralTrabajos {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERYS */
+/* Lo hice con el unico fin de demostrar la utilizacion de media querys, ya que la pagina ya era responsive por la utilizacion de porcentajes en los tamaños */
+   @media screen and (max-width: 576px) {
+    aside {
+      background-color: orange;
+    }
+  } 
+
+  
+
+  @media screen and (min-width:576px  ) and (max-width: 768px) {
+    aside {
+      background-color: red;
+    }
+  } 
